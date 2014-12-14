@@ -1,0 +1,35 @@
+.welcomeTextIcon{
+	position: absolute;
+	top: 0px;
+	width: 200px;
+	right: 200px;
+	text-align: right;
+	padding-top: 13px;
+	font-family: helvetica;
+	font-size: 15px;
+	font-style: bold;
+	color: white;
+}
+#EMPwelcomeTextIcon{
+	right: 40px;
+}
+#EMPsettingsIcon{
+	background-color: orange;
+	right: 240px;
+}
+#EMPtimelineIcon{
+	background-color: orange;
+	right: 420px;
+}
+#EMPprospectsIcon{
+	background-color: orange;
+	right: 330px;
+}
+.EMPtab{
+	position: absolute;
+	top: 60px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+

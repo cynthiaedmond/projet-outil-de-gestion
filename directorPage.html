@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+
+<!--html>
+	<head>
+		<title>Planning</title>
+
+		<script src="jQuery/jQuery Color Animations v2.1.2.js"></script>
+		<script src="jQuery/jquery-1.11.1.js"></script>
+		<script src="requests/requests.js"></script>
+		<script src="directorPage.js"></script>
+		<script src="pipeline.js"></script>
+		<script src="addNewProspect.js"></script>
+		<link rel="stylesheet" type="text/css" href="clients.css">		
+		<link rel="stylesheet" type="text/css" href="directorPage.css">
+		<link rel="stylesheet" type="text/css" href="addNewProspect.css">
+
+
+	</head>
+	<body-->
+		<div id ="directorTabBar" class="tabBar">
+			<div id ="pipeline" class="iconsBar tabBarIcon">Pipeline </div>
+			<div id ="timeline" class="iconsBar tabBarIcon">Timeline </div>
+			<div id="clients" class="iconsBar tabBarIcon">Clients</div>
+			<div id="DIRsettingsIcon" class="tabBarIcon">Settings</div>
+			<div id ="DIRwelcomeTextIcon" class="welcomeTextIcon">fullName</div>
+		</div>
+		<div id="directorSubPage">
+			<div id="DIRsettingsTab"></div>
+			<div id="timelinePage">
+				<!--div id="timelineSubBar">
+					<div id="subBar1">
+						<input type="button" value="Back" id="backButton" class="subBarButton"></input>
+						<input type="button" value="Next" id="forwardButton" class="subBarButton"></input-->
+						<div id="backButton" class="DIRtimelineNavigationButton"></div>
+						<div id="forwardButton" class="DIRtimelineNavigationButton"></div>
+						<div id="firstday">Monday</div>
+						<div id="lastday">Sunday</div>
+					<!--/div-->
+					<div id="MonthYear" class="DIRmonthIndicator"></div>
+				<!--/div-->
+				<div id="DIRtableContentOuterContainer">
+					<div id="tableContent">
+						<table id="timelineTable">
+						</table>
+					</div>
+				</div>
+				<div id="legende">
+					<table>
+						<tr>
+							<td class="legendeCol1"><div class=legendeCertainty style="background-color:red"></div></td>
+							<td class="legendeCol">20%</td>
+							<td class="legendeCol1"><div class=legendeCertainty style="background-color:orange"></div></td> 
+							<td class="legendeCol">40%</td>
+							<td class="legendeCol1"><div class=legendeCertainty style="background-color:yellow"></div></td>
+							<td class="legendeCol">60%</td>
+							<td class="legendeCol1"><div class=legendeCertainty style="background-color:greenyellow"></div></td>
+							<td class="legendeCol">80%</td>
+							<td class="legendeCol1"><div class=legendeCertainty style="background-color:green"></div></td>
+							<td class="legendeCol">100%</td>
+						</tr>
+					</table>
+				</div>
+
+				<div id="excelReports">
+					<input type ="button" value="Export" class="exportButton"></input>
+					<span id="DIRreportStartDate" class="DIRreportDateLabel">Start Date : </span>
+					<input type="date" id="startDateReportField" class="newProspectField"></input>
+					<span id="DIRreportEndDate" class="DIRreportDateLabel">End Date : </span>
+					<input type="date" id="endDateReportField" class="newProspectField"></input>
+				</div>
+				<span id="DIRexportDoneDialog"></span>
+				<input type="button" value="Done" id="DIRexportDialogDoneButton" class="newProspectButton" />
+			</div>
+
+			<div id="pipelinePage">
+				
+			</div>
+
+			<div id="clientsPage">
+				<div id ="clientsContent">
+					<div id="topBar">
+						<div id="clientsManageBar">Manage Clients</div>
+						<!--input type ="button" value="+ Add Client" id="addClientButtonClientsPage"></input-->
+					</div>
+					<div id="clientsTableContent">
+						<table id="clientsTable">
+						</table>
+					</div>
+
+					<div id ="editClientContent"> <!--class ="addProspectContent"-->
+					<div class="editClientBackground"></div>
+
+						<div id="editClientcontentleft"> <!--class="newProspectContentLeft"-->
+							<span id="firstNameLabel" class="newProspectLabel">First Name </span>
+							<br />
+							<br />
+							<span id="lastNameLabel" class="newProspectLabel">Last Name</span>
+							<br/>
+							<br/>
+							<span id="emailLabel" class="newProspectLabel">E-mail</span>
+							<br />
+							<br />
+							<span id="phoneNumberLabel" class="newProspectLabel">Phone Number</span>
+						</div>
+
+						<div id="editClientcontentright"> <!--class="newProspectContentRight"-->	
+							<input type="text" id="firstNameField" class="newProspectField"></input>
+							<br />
+							<br />
+							<input type="text" id="lastNameField" class="newProspectField"></input>
+							<br />
+							<br />
+							<input type="text" id="emailField" class="newProspectField"></input>
+							<br />
+							<br />
+							<input type="text" id="phoneNumberField" class="newProspectField"></input>	
+						</div>
+
+						<div id="editClientContentBottom"> <!--class="newProspectContentBottom"-->
+							<input type="button" value="Done" id="doneEditClientButton" class="newProspectButton"></input>
+							<input type="button" value="Cancel" id="cancelEditClientButton" class="newProspectButton"></input>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!--/body>
+</html-->

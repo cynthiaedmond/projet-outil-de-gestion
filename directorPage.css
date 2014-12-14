@@ -1,0 +1,674 @@
+#directorSubPage /*page with position of a tab - tab bar is outside*/
+{
+	background: url('./images/bg.png');
+	position: absolute;
+	top: 60px;
+	bottom: 0px;
+	width: 100%;
+}
+
+.welcomeTextIcon{
+	position: absolute;
+	top: 0px;
+	width: 200px;
+	right: 200px;
+	text-align: right;
+	padding-top: 13px;
+	font-family: helvetica;
+	font-size: 15px;
+	font-style: bold;
+	color: white;
+}
+#DIRwelcomeTextIcon{
+	right: 40px;
+}
+#DIRsettingsIcon{
+	background-color: orange;
+	right: 240px;
+}
+#clients{
+	background-color: orange;
+	right: 320px;
+}
+#pipeline{
+	background-color: orange;
+	right: 400px;
+}
+#timeline{
+	background-color: orange;
+	right: 490px;
+}
+.DIRmonthIndicator{/*although should be the id - just to prevent modifying the javascript*/
+	position: absolute;
+	font-family: helvetica;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: right;
+	color: orange;
+	top: 20px;
+	right: 0px;
+	width: 150px;
+	padding: 10px;
+	padding-right: 15px;
+	background-color: white;
+}
+.DIRtimelineNavigationButton{
+	position: absolute;
+	top: 200px;
+	width: 0px;
+	height: 0px;
+}
+#backButton{
+	left: 10%;
+	border-right: 25px solid white;
+	border-top: 25px solid transparent;
+	border-bottom: 25px solid transparent;
+	border-left: 25px solid transparent;
+	transform: translate(-150%, 0%);
+	-ms-transform: translate(-150%, 0%); /* IE 9 */
+	-webkit-transform: translate(-150%, 0%); /* Safari and Chrome */
+}
+#forwardButton{
+	right: 10%;
+	border-left: 25px solid white;
+	border-top: 25px solid transparent;
+	border-bottom: 25px solid transparent;
+	border-right: 25px solid transparent;
+	transform: translate(150%, 0%);
+	-ms-transform: translate(150%, 0%); /* IE 9 */
+	-webkit-transform: translate(150%, 0%); /* Safari and Chrome */
+}
+
+#timelinePage
+{
+	position: absolute;
+	/*top:50px;*/
+	width: 100%;
+	height: 100%;
+	bottom: 0px;
+	/*left: 60%;*/
+	/*background-image: url('./images/bg.png');*/
+	z-index: 200;
+}
+
+#timelineSubBar
+{
+	position: absolute;	
+	width: 100%;
+	height: 100px;
+}
+
+#subBar1
+{
+	position: absolute;
+	width: 100%;
+	height: 80px;
+	/*left:-700px;*/
+}
+
+#subBar2
+{
+	position: absolute;
+	top: 0px;
+	width: 300px;
+	height: 60px;
+	left: 260px;
+	padding: 0px;
+}
+
+#subBar3
+{
+	position: absolute;
+	top: 0px;
+	width: 100px;
+	height: 60px;
+	left: 660px;
+	padding: 0px;
+}
+
+#DIRtableContentOuterContainer{
+	position: absolute;
+	width: 80%;
+	top: 110px;
+	left: 10%;
+	height: 430px;
+	overflow: hidden;
+}
+#tableContent
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: -10%;
+	bottom: 0px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+#timelineTable
+{
+	position: absolute;
+	top: 0px;
+	left: 7px;
+	width: 90.9090%;
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 0px;
+	font-family: helvetica;
+	border:1px black solid;
+}
+
+#pipelinePage
+{
+	position: absolute;
+	display: none;
+	/*top:60px;*/
+	height: 100%;
+	width: 100%;
+	background-image: url('./images/bg.png');	
+}
+
+#pipelineTable
+{
+	width: 100%;
+	border: 1px solid transparent;
+	border-collapse: collapse;
+	padding: 0px;
+	position: absolute;
+	font-family: helvetica;
+}
+
+#pipelineTableContainer
+{
+	width: 100%;
+	overflow-y:scroll;
+	height: 500px;
+	top :50px;
+	position: absolute;
+
+}
+#pipelineTableContent
+{
+	/*background-color: green;*/
+	height: 100%;
+	width: 100%;
+}
+#clientsPage
+{
+	/*left: 60%;*/
+	display: none;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	/*width: 100%;*/
+	/*background-image: url('./images/bg.png');*/
+}
+
+#clientsContent
+{
+	position: absolute;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	/*z-index: 100;*/
+}
+
+#topBar
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 200;
+}
+#addClientButtonClientsPage
+{
+	position: absolute;
+	background-color: green;
+	height:30px;
+	width: 100px;
+	left: 100px;
+	font-family: helvetica;
+	font-size: 14px;
+	color: white;
+	text-align: center;
+	top:20px;
+	z-index: 200;
+}
+#clientsTableContent
+{
+	position: absolute;
+	top: 80px;
+	left: 10%;
+	right: 10%;
+	height: 400px;
+
+
+}
+#clientsTable
+{
+	position: absolute;
+	border:1px solid gray;
+	border-collapse:collapse;
+	font-family: helvetica;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+
+}
+
+#clientsManageBar
+{
+	position: absolute;
+	left:0px;
+	top: 20px;
+	width: 100%;
+	font-size: 24px;
+	color: white;
+	font-weight: bold;
+	font-family: helvetica;
+	text-align: center;
+	padding: 0px;
+	z-index: 200;
+}
+.editClientBackground{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: white;
+	opacity: 0.6;
+}
+#editClientContent
+{
+	position: absolute;
+	display: none;
+	top:0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 200;
+}
+#editClientcontentright
+{
+	position: absolute;
+	right: 25%;
+	top: 25%;
+	width: 25%;
+	height: 50%;
+	background-color: lightgray;
+	z-index: 200;
+}
+#editClientcontentleft
+{
+	position: absolute;
+	left: 25%;
+	top: 25%;
+	width: 25%;
+	height: 50%;
+	background-color: lightgray;
+	z-index: 200;
+}
+#firstNameLabel{
+	left: 30%;
+	top: 60px;
+}
+#lastNameLabel{
+	left: 30%;
+	top: 100px;
+}
+#emailLabel{
+	left: 30%;
+	top: 140px;
+}
+#phoneNumberLabel{
+	left: 30%;
+	top: 180px;
+}
+#firstNameField{
+	left: 10%;
+	top: 55px;
+}
+#lastNameField{
+	left: 10%;
+	top: 95px;
+}
+#emailField{
+	left: 10%;
+	top: 135px;
+}
+#phoneNumberField{
+	left: 10%;
+	top: 175px;
+}
+#editClientContentBottom
+{
+	position: absolute;
+	top: 25%;
+	transform: translate(0,220px);
+	-ms-transform: translate(0,220px); /* IE 9 */
+	-webkit-transform: translate(0,220px); /* Safari and Chrome */
+	left: 25%;
+	right: 25%;
+	height: 100px;
+	z-index: 201;
+}
+#doneEditClientButton{
+	background-color: green;
+	color: white;
+	left: 45%;
+	top: 30%;
+}
+#cancelEditClientButton{
+	background-color: gray;
+	color: white;
+	left: 45%;
+	top: 30%;
+	transform: translate(120px,0);
+	-ms-transform: translate(120px,0); /* IE 9 */
+	-webkit-transform: translate(120px,0); /* Safari and Chrome */
+}
+
+#lastday
+{
+	position: absolute;;
+	width: 300px;
+	height: 50px;
+	top:70px;
+	left:920px;
+	color: white;
+	font-family: helvetica;
+}
+
+#firstday
+{
+	position: absolute;
+	width: 300px;
+	height: 50px;	
+	top:70px;
+	left: 120px;
+	color: white;
+	font-family: helvetica;
+}
+.DIRweekCalendarRow{
+	height: 16.66%;
+	border: 1px solid white;
+	padding: 0px;
+}
+.DIRweekCalendarCell{
+	/*width: 14.285%;*/
+	height:50px;
+	border: 1px solid white	;
+	text-align: center;
+	background-color: #E0E0E0;
+	padding: 0px;
+}
+.DIRweekCalendarCellPipeline
+{
+	width: 100%;
+	height:10px;
+	border: 1px solid white	;
+	text-align: center;
+	background-color: #E0E0E0;
+	padding: 0px;
+}
+.DIRweekCalendarHeaderCell{
+	/*width: 14.285%;*/
+	border: 1px solid white	;
+	height: 20px;
+	padding: 0px;
+	font-family: helvetica;
+	font-size: 18px;
+	/*font-weight: bold;*/
+	text-align: center;
+	color: black;
+	background-color: #E0E0E0;
+}
+.DIRweekCalendarHeaderCellPipeline{
+	width: 40px;
+	border: 1px solid white	;
+	padding: 0px;
+	font-family: helvetica;
+	font-size: 18px;
+	height: 5px;
+	/*font-weight: bold;*/
+	text-align: center;
+	color: black;
+	background-color: #E0E0E0;
+}
+.DIRweekCalendarCellTitle{
+	position: absolute;
+	font-family: helvetica;
+	color: black;
+	height: 10px;
+	font-size: 14px;
+	top: 10px;	
+	left: 10px;
+	right: 2px;
+	height: 18px;
+	overflow: hidden;
+	/*background-color: red;*/
+}
+.DIRweekCalendarCellCertainty{
+	position: absolute;
+	/*background-color: red;*/
+	width: 8px;
+	height: 8px;
+	border-radius: 4px;
+	top: 30px;
+	left: 10px;
+}
+.DIRweekCalendarCellWrapper{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.DIRweekCalendarCellCertaintyBar{
+	position: absolute;
+	width: 65px;
+	height: 8px;
+	top: 30px;
+}
+#legende
+{
+	position: absolute;
+	top :470px;
+	left:400px;
+}
+.legendeCertainty{
+	left: 40px;
+	right: 0px;
+	width: 8px;
+	height: 8px;
+	border-radius: 4px;
+	
+}
+.legendeCol
+{
+	left: 0px;
+	width :50px;
+	color: white;
+	font-family: helvetica;
+}
+.legendeCol1
+{
+	text-align: right;
+	position: relative;
+	left: 35px;
+	width :50px;
+	color: white;
+	font-family: helvetica;
+
+}
+#legendePipeline
+{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 2000px;
+	bottom: 10px;
+	background-color: red;
+}
+
+.subBarButton
+{
+	position: absolute;
+	border: none;
+	height: 35px;
+	width: 100px;
+	font-family: helvetica;
+	font-size: 16px;
+	font-style: bold;
+	background-color: gray;
+	color: white;
+	z-index: 100;
+}
+#backButtonPipeline{
+	right: 52%;
+}
+#nextButtonPipeline{
+	left: 52%;
+}
+
+
+#occupancyButton
+{
+	left:100px;
+}
+#addContainer
+{
+	height:50px;
+	z-index: 200;
+}
+.DIRweekCalendarCellPipelineTitle
+{
+	width: 100px;
+	background-color: #E0E0E0;
+	border: 1px solid white;
+	text-align: center;
+}
+
+#addButton
+{
+	background-color: green;
+	height: 40px;
+	color: white;
+	font-family: helvetica;
+}
+#firstMonday
+{
+	position: absolute;
+	width: 200px;
+	top: 10px;
+	left:130px;
+	color: white;
+	font-family: Helvetica;
+}
+#lastSunday
+{
+	top: 15px;
+	position: absolute;
+	right: 20px;
+	height :20px;
+	width: 200px;
+	color: white;
+	font-family: Helvetica;	
+}
+.editRow
+{
+	border-top: transparent;
+	width: 40px;
+}
+.editButton
+{
+	width:50px;
+	border: none;
+	height: 25px;
+	background-color: gray;
+	color: white;
+	font-family: helvetica;
+}
+.editClientButton{
+	width:50px;
+	border: none;
+	height: 25px;
+	background-color: gray;
+	color: white;
+	font-family: helvetica;
+}
+
+.col
+{
+	background-color: #E0E0E0;
+	border: 1px solid white;
+}
+#excelReports
+{
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	top:570px;
+}
+#startDateReportField{
+	left: 200px;
+}
+#endDateReportField{
+	left: 500px;
+}
+.exportButton
+{
+	position: absolute;
+	width:140px;
+	height: 25px;
+	border-radius: 6px;
+	background-color: green;
+	color: white;
+	font-family: helvetica;
+	font-size: 16;
+	left: 700px;
+
+}
+.DIRreportDateLabel{
+	position: absolute;
+	top: 5px;
+	font-family: helvetica;
+	font-size: 16px;
+	color: white;
+}
+#DIRreportStartDate{
+	left: 100px;
+}
+#DIRreportEndDate{
+	left: 400px;
+}
+#DIRexportDoneDialog{
+	position: absolute;
+	display: none;
+	padding-top: 60px;
+	padding-bottom: 100px;
+	padding-left: 30px;
+	padding-right: 30px;
+	background-color: white;
+	font-family: helvetica;
+	font-size: 14px;
+	color: black;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%); /* IE 9 */
+	-webkit-transform: translate(-50%,-50%); /* Safari and Chrome */
+}
+#DIRexportDialogDoneButton{
+	display: none;
+	background-color: green;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,30px);
+	-ms-transform: translate(-50%,30px); /* IE 9 */
+	-webkit-transform: translate(-50%,30px); /* Safari and Chrome */
+}

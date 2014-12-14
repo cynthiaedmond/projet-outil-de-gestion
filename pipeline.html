@@ -1,0 +1,142 @@
+<!--html>
+	<head>
+
+		<script src="jQuery/jQuery Color Animations v2.1.2.js"></script>
+		<script src="jQuery/jquery-1.11.1.js"></script>
+		<script src="requests/requests.js"></script>
+		<script src="./pipeline.js"></script>
+		<script src="./addNewProspect.js"></script>
+		<link rel="stylesheet" type="text/css" href="addNewProspect.css">
+		<link rel="stylesheet" type="text/css" href="pipeline.css">
+	</head>
+
+
+	<body-->
+		<div id="addContainer">
+			<input type ="button" id="addButton" value="ADD PROSPECT"></input>
+			<input type='button' value='Previous' id='backButtonPipeline' class='subBarButton'></input>
+ 			<input type='button' value='Next' id='nextButtonPipeline' class='subBarButton'></input> 
+			<div id ="firstMonday"></div>
+			<div id ="lastSunday"></div>
+		</div>
+		<div id="pipelineTableContainer">
+			<div id="legendePipeline">
+					<table>
+						<tr>
+							<td class="legendeCol"><div class=legendeCertainty style="background-color:red"></div></td>
+							<td class="legendeCol">20%</td>
+							<td class="legendeCol"><div class=legendeCertainty style="background-color:orange"></div></td> 
+							<td class="legendeCol">40%</td>
+							<td class="legendeCol"><div class=legendeCertainty style="background-color:yellow"></div></td>
+							<td class="legendeCol">60%</td>
+							<td class="legendeCol"><div class=legendeCertainty style="background-color:greenyellow"></div></td>
+							<td class="legendeCol">80%</td>
+							<td class="legendeCol"><div class=legendeCertainty style="background-color:green"></div></td>
+							<td class="legendeCol">100%</td>
+						</tr>
+					</table>
+				</div>
+			<div id="pipelineTableContent">
+				<table id="pipelineTable">
+				</table>
+				
+			</div>
+		</div>
+		
+
+		<div id="newProspectContainer">
+				<div id="tabBar">Create New Prospect</div>
+
+				<div id="newProspectContent" class="addProspectContent">	
+					<div class="newProspectBackground"></div>
+					
+					<div class="newProspectContentLeft">
+						<span id="titleLabel" class="newProspectLabel">Project Name*</span>
+						<span id="ClientLabel" class="newProspectLabel">Client*</span>
+						<span id="startDateLabel" class="newProspectLabel">Start Date*</span>
+						<span id="endDateLabel" class="newProspectLabel">End Date*</span>
+						<span id="certaintyLabel" class="newProspectLabel">Certainty* </span>
+						<span id="manHourLabel" class="newProspectLabel">ManHours* </span>
+						<span id="peopleLabel" class="newProspectLabel">People* </span>
+					</div>
+
+					<div class="newProspectContentRight">
+						<input type="text" id="titleField" class="newProspectField"></input>
+						<span id="aliasLabel" class="newProspectLabel">Alias*</span>
+						<input type="text" id="aliasField" class="newProspectField"></input>
+						<select id="clientChoices">
+						</select>
+						<input type="date" id="startDateField" class="newProspectField"></input>
+						<input type="date" id="endDateField" class="newProspectField"></input>
+						<input type="range" min="0" max="100" value="0" step="5" id="mySlider" onchange="showValue(this.value)" />
+						<span id="range">0%</span>
+						<input type="text" id="manHoursField" class="newProspectField"></input>
+					
+
+						<div id = "thirdColumn">
+						<input type="button" value ="Add Client" id="addClientButton"></input>
+						</div>
+					</div>	
+
+					<div id="peopleContainer">
+						<!--span id="peopleLabel" class="newProspectLabel">People* </span-->
+						<div id="peopleTableContent">	
+							<table id="peopleTable">
+							</table>
+						</div>
+					</div>
+
+					<div id="newProspectContentBottomWithoutEditing" class="newProspectContentBottom">
+						<!--input type="button" value="Choose People" id="choosePeopleButton" class="newProspectButton"></input-->
+						<input type="button" value="Cancel" id="cancelPeopleButton" class="newProspectButton"></input>
+						<input type="button" value ="Save" id="donePeopleButton" class="newProspectButton"></input>
+					</div>
+					<div id="editProspectContentBottom" class="newProspectContentBottom">
+						<!--input type="button" value="Choose People" id="choosePeopleButton" class="newProspectButton"></input-->
+						<input type="button" value="Cancel" id="cancelEditProspectButton" class="newProspectButton"></input>
+						<input type="button" value ="Save" id="doneEditProspectButton" class="newProspectButton"></input>
+					</div>
+
+					<div id="required"> * : Required</div>
+				</div>
+			
+			
+				<!--div id="addClientContainer"-->
+				<div id ="addClientContent" class ="addProspectContent">
+					<div class="newProspectBackground"></div>
+
+					<div id="clientcontentleft" class="newProspectContentLeft">
+						<span id="clientfirstNameLabel" class="newProspectLabel">First Name </span>
+						<br />
+						<br />
+						<span id="clientlastNameLabel" class="newProspectLabel">Last Name</span>
+						<br/>
+						<br/>
+						<span id="clientemailLabel" class="newProspectLabel">E-mail</span>
+						<br />
+						<br />
+						<span id="clientphoneNumberLabel" class="newProspectLabel">Phone Number</span>
+					</div>
+
+					<div id="clientcontentright" class="newProspectContentRight">	
+						<input type="text" id="clientfirstNameField" class="newProspectField"></input>
+						<br />
+						<br />
+						<input type="text" id="clientlastNameField" class="newProspectField"></input>
+						<br />
+						<br />
+						<input type="text" id="clientemailField" class="newProspectField"></input>
+						<br />
+						<br />
+						<input type="text" id="clientphoneNumberField" class="newProspectField"></input>	
+					</div>
+
+					<div id="clientcontentbottom" class="newProspectContentBottom">
+						<input type="button" value="Save" id="doneClientButton" class="newProspectButton"></input>
+						<input type="button" value="Cancel" id="cancelClientButton" class="newProspectButton"></input>
+					</div>
+				</div>
+		</div>
+
+	<!--/body>
+</html-->

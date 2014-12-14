@@ -1,0 +1,336 @@
+body {
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+}
+
+/*h2
+{
+	font-family: helvetica;
+}*/
+h3
+{
+	font-family: helvetica;
+	height: 20px;
+	color: white;
+	text-align: center;
+}
+
+
+#newProspectContainer{
+	position: absolute;
+	display: none;
+	left: 0%;
+	top: 0%;
+	bottom: 0px;
+	right:0px;
+	/*background: url('./images/bg.png');*/
+	z-index: 200;
+}
+
+#tabBar{
+	position: absolute;
+	left:0px;
+	top: 20px;
+	width: 100%;
+	font-size: 24px;
+	color: white;
+	font-weight: bold;
+	font-family: helvetica;
+	text-align: center;
+	padding: 0px;
+}
+
+.addProspectContent{
+	position: absolute;
+	top: 70px;
+	left: 0%;
+	right: 0%;
+	height: 500px;
+	z-index: 300;
+}
+.newProspectBackground{
+	position: absolute;
+	background-color: white;
+	height: 100%;
+	width: 100%;
+	opacity: 0.5;
+	z-index: 100;
+}
+
+.newProspectContentLeft{
+	position: absolute;
+	top:0px;
+	left: 15%;
+	height: 70%;
+	/*bottom: 60px;*/
+	width: 15%;
+	text-align: left;
+	z-index: 100;
+}
+.newProspectContentRight{
+	position: absolute;
+	top:0px;
+	left:30%;
+	/*background-color: red;*/
+	width: 60%;
+	height: 70%;
+	/*bottom: 60px;*/
+	z-index: 100;
+}
+
+#clientcontentleft
+{
+	top :50px;
+}
+
+#clientcontentright
+{
+	top:50px;
+}
+#clientcontentbottom	
+{
+	top: 280px;
+	left: 25%;
+	height: 60px;
+	width: 400px;
+}
+.newProspectField{
+	position: absolute;
+	left: 0px;
+	border: none;
+	height: 25px;
+	width: 140px;
+	border-style:solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: black;
+	/*left: 0%;*/
+	font-family: helvetica;
+	font-size: 14px;
+}
+#priceField
+{
+	width: 100px;
+}
+.newProspectLabel{
+	position: absolute;
+	font-family: helvetica;
+	font-size: 16px;
+	font-weight: bold;
+}
+/*#peopleLabel
+{
+	left: 150px;
+	top: 10px;
+}*/
+.newProspectButton{
+	position: absolute;
+	border: none;
+	height: 35px;
+	width: 100px;
+	font-family: helvetica;
+	font-size: 16px;
+	font-style: bold;
+	color: white;
+	z-index: 100;
+}
+#choosePeopleButton
+{	width: 200px;
+	left: 55%;
+	bottom: 10px;
+	background-color: green;
+}
+#cancelPeopleButton{
+	left: 200px;
+	background-color: gray;
+	color: white;
+}
+
+#donePeopleButton
+{
+	left: 80px;
+	background-color: green;
+	color: white;
+}
+#doneClientButton
+{
+	left: 80px;
+	background-color: green;
+	color: white;
+}
+#cancelClientButton
+{
+	left: 200px;
+	background-color: gray;
+	color: white;
+}
+#doneEditProspectButton
+{
+	left: 80px;
+	background-color: green;
+	color: white;
+}
+#cancelEditProspectButton
+{	
+	left: 200px;
+	background-color: gray;
+	color: white;
+}
+#addClientContainer
+{
+	display: none;
+	position: absolute;
+}
+#addClientContent
+{
+	display: none;
+	position: absolute;
+	/*height: 50%;*/
+	z-index: 100;
+
+}
+
+#required
+{
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	font-weight: bold;
+	font-size: 16;
+	font-family: helvetica;
+	color: black;
+	z-index: 301;
+}
+
+#titleLabel{
+	top: 40px;
+}
+#aliasLabel{
+	top: 40px;
+	left: 320px;
+}
+#ClientLabel{
+	top: 80px;
+}
+#thirdColumn
+{
+	position: absolute;
+	top: 75px;
+	left: 220px;
+	z-index: 100;
+}
+#startDateLabel{
+	top: 120px;
+}
+#endDateLabel{
+	top: 160px;
+}
+#certaintyLabel{
+	top: 200px;
+}
+#manHourLabel{
+	top: 240px;
+}
+#peopleLabel{
+	top: 280px;
+}
+
+#titleField{
+	width: 300px;
+	top: 35px;
+}
+#aliasField{
+	left: 380px;
+	width: 100px;
+	top: 35px;
+}
+#clientChoices{
+	position: absolute;
+	left: 0px;
+	border: none;
+	height: 25px;
+	width: 200px;
+	border-style:solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: black;
+	/*left: 0%;*/
+	font-family: helvetica;
+	font-size: 14px;
+
+	top: 75px;
+}
+#addClientButton{
+	position: absolute;
+	border: none;
+	height: 25px;
+	width: 80px;
+	font-family: helvetica;
+	font-size: 14px;
+	font-style: bold;
+	color: white;
+	z-index: 100;
+	background-color: gray;
+}
+#startDateField{
+	top: 115px;
+}
+#endDateField{
+	top: 155px;
+}
+#mySlider{
+	position: absolute;
+	left: 0px;
+	top: 188px;
+	width: 200px;
+}
+#range{
+	position: absolute;
+	left: 220px;
+	top: 202px;
+	font-family: helvetica;
+	font-size: 14px;
+}
+#manHoursField{
+	top: 235px;
+}
+#peopleContainer
+{
+	position: absolute;
+	width: 300px;
+	left: 30%;
+	top: 275px;
+	height: 100px;
+	z-index: 100;
+	overflow: hidden;
+	border-radius: 3px;
+	border: 1px solid black;
+	background-color: white;
+}
+#peopleTableContent
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+#peopleTable{
+	position: absolute;
+	width: 100%;
+}
+.newProspectContentBottom
+{
+	position: absolute;
+	top:415px;
+	left:30%;
+}
+#editProspectContentBottom
+{
+	position: absolute;
+	display: none;
+	top: 415px;
+	left: 30%;
+
+}

@@ -1,0 +1,32 @@
+h1
+{
+	font-family:helvetica;
+}
+
+#addClient
+{
+	background-color: green;
+	width: 100px;
+	height:20px;
+	color: white;
+	border-radius: 10px;
+	text-align: center;
+}
+/*#clientsContent
+{
+	height: 100%;
+	z-index: 1;
+}*/
+/*#clientsTable
+{
+	left: 50%;	
+	z-index: 100;
+	border:1px solid gray;
+	border-collapse:collapse
+}*/
+
+#clientsTable td, #clientsTable tr
+{
+	padding:15px;
+	font-family: helvetica;
+}

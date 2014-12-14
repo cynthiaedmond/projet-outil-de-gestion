@@ -1,0 +1,121 @@
+<html>
+	<head>
+		<script src="jQuery/jQuery Color Animations v2.1.2.js"></script>
+		<script src="jQuery/jquery-1.11.1.js"></script>
+		<script src="requests/requests.js"></script>
+		<script src="addNewProspect.js"></script>
+	<link rel="stylesheet" type="text/css" href="addNewProspect.css">
+	</head>
+<body>
+
+<div id="newProspectContainer">
+	<!--div id="tabBar"><center><h2>Create New Prospect</h2></center></div-->
+
+	<div id="newProspectContent" class="addProspectContent">	
+		<div class="newProspectBackground"></div>
+		
+		<div class="newProspectContentLeft">
+			<span id="titleLabel" class="newProspectLabel">Project Name*</span>
+			<br />
+			<br />
+			<span id="ClientLabel" class="newProspectLabel">Client*</span>
+			<br/>
+			<br/>
+			<span id="startDateLabel" class="newProspectLabel">Start Date*</span>
+			<br />
+			<br />
+			<span id="endDateLabel" class="newProspectLabel">End Date*</span>
+			<br />
+			<br />
+			<span id="certaintyLabel" class="newProspectLabel">Certainty* </span>
+			<br />
+			<br />
+			<span id="priceLabel" class="newProspectLabel">Price* </span>
+			<br/>
+			<br/>
+			<br/>
+		</div>
+
+		<div class="newProspectContentRight">	
+			<input type="text" id="titleField" class="newProspectField"></input>
+			<br />
+			<br />
+			<select id="clientChoices">
+			</select>
+			<br/>
+			<br/>
+			<input type="date" id="startDateField" class="newProspectField"></input>
+			<br />
+			<br />
+			<input type="date" id="endDateField" class="newProspectField"></input>
+			<br />
+			<br />
+			<input type="range" min="0" max="100" value="0" step="5" id="slider" onchange="showValue(this.value)" />
+			<span id="range">0%</span>
+			<br/>
+			<br/>
+			<div>
+			<input type="text" id="priceField" class="newProspectField"></input>
+		</div>
+
+		<div id = "thirdColumn">
+			<input type="button" value ="Add Client" id="addClientButton"></input>
+			<select id="currency">
+				<option value="$">$</option>
+				<option value="L.L">L.L.</option>
+			</select>
+		</div>
+
+		<div id="peopleContainer">
+			<span id="peopleLabel" class="newProspectLabel">People* </span>
+			<div id="peopleTableContent">	
+				<table id="peopleTable">
+				</table>
+			</div>
+		</div>
+
+		<div class="newProspectContentBottom">
+			<!--input type="button" value="Choose People" id="choosePeopleButton" class="newProspectButton"></input-->
+			<input type="button" value="Cancel" id="cancelPeopleButton" class="newProspectButton"></input>
+			<input type="button" value ="Done" id="donePeopleButton" class="newProspectButton"></input>
+		</div>
+	</div>
+	
+	<div id ="addClientContent" class ="addProspectContent">
+		<div class="newProspectBackground"></div>
+
+		<div id="clientcontentleft" class="newProspectContentLeft">
+			<span id="firstNameLabel" class="newProspectLabel">First Name </span>
+			<br />
+			<br />
+			<span id="lastNameLabel" class="newProspectLabel">Last Name</span>
+			<br/>
+			<br/>
+			<span id="emailLabel" class="newProspectLabel">E-mail</span>
+			<br />
+			<br />
+			<span id="phoneNumberLabel" class="newProspectLabel">Phone Number</span>
+		</div>
+
+		<div id="clientcontentright" class="newProspectContentRight">	
+			<input type="text" id="firstNameField" class="newProspectField"></input>
+			<br />
+			<br />
+			<input type="text" id="lastNameField" class="newProspectField"></input>
+			<br />
+			<br />
+			<input type="text" id="emailField" class="newProspectField"></input>
+			<br />
+			<br />
+			<input type="text" id="phoneNumberField" class="newProspectField"></input>	
+		</div>
+
+		<div id="clientcontentbottom" class="newProspectContentBottom">
+			<input type="button" value="Done" id="doneClientButton" class="newProspectButton"></input>
+
+			<input type="button" value="Cancel" id="cancelClientButton" class="newProspectButton"></input>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,163 @@
+#signInPage{
+
+}
+#signInIcon{
+	height: 100%;
+}
+#welcomeImage{
+	position: fixed;
+	width: 100%;
+	height: 700px;
+	top: 60px;
+	background: url('images/bg.png');
+	z-index: -1;
+}
+#signInContainer{
+	display:none;
+	position: absolute;
+	width: 100%;
+	top: 760px;
+	height: 300px;
+}
+#signInBackground{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	opacity: 0.6;
+}
+#signInContent{
+	position:absolute;
+	width: 40%;
+	height: 100%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	-ms-transform: translate(-50%, 0%); /* IE 9 */
+	-webkit-transform: translate(-50%, 0%); /* Safari and Chrome */
+}
+#signInContentLeft{
+	position: absolute;
+	width: 50%;
+	top: 0px;
+	bottom: 60px;
+	left: 0px;
+	text-align: center;
+}
+#signInContentRight{
+	position: absolute;
+	width: 50%;
+	top: 0px;
+	bottom: 60px;
+	right: 0px;
+}
+.signInField{
+	position: absolute;
+	border: none;
+	height: 25px;
+	width: 140px;
+	border-style:solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: black;
+	left: 5%;
+	font-family: helvetica;
+	font-size: 14px;
+}
+#usernameField{
+	bottom: 75px;
+}
+#passwordField{
+	bottom: 30px;
+}
+.signInLabel{
+	position: absolute;
+	right:20%;
+	font-family: helvetica;
+	font-size: 16px;
+	font-style: bold;
+}
+#usernameLabel{
+	bottom: 80px;
+}
+#passwordLabel{
+	bottom: 35px;
+}
+#signInButton{
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	-ms-transform: translate(-50%, 0%); /* IE 9 */
+	-webkit-transform: translate(-50%, 0%); /* Safari and Chrome */
+	border: none;
+	/*border-radius: 5px;*/
+	width: 100px;
+	height: 35px;
+	background-color: gray;
+	font-family: helvetica;
+	font-size: 16px;
+	font-style: bold;
+	color: white;
+
+	z-index: 1;
+}
+
+#signInLabelLarge{
+	position: absolute;
+	top: 50px;
+	font-family: helvetica;
+	font-size: 32px;
+	font-weight: bold;
+	font-style: italic;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	-ms-transform: translate(-50%, 0%); /* IE 9 */
+	-webkit-transform: translate(-50%, 0%); /* Safari and Chrome */
+}
+
+#ourProjectNameLabel{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	-ms-transform: translate(-50%, 0%); /* IE 9 */
+	-webkit-transform: translate(-50%, 0%); /* Safari and Chrome */
+	font-family: helvetica;
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	top: 90px;
+}
+#ourProjectDescriptionLabel{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	-ms-transform: translate(-50%, 0%); /* IE 9 */
+	-webkit-transform: translate(-50%, 0%); /* Safari and Chrome */
+	font-family: helvetica;
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	top: 140px;
+}
+#ourNamesLabel{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	-ms-transform: translate(-50%, 0%); /* IE 9 */
+	-webkit-transform: translate(-50%, 0%); /* Safari and Chrome */
+	font-family: helvetica;
+	font-size: 14px;
+	color: white;
+	top: 530px;
+}
+#profNameLabel{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	-ms-transform: translate(-50%, 0%); /* IE 9 */
+	-webkit-transform: translate(-50%, 0%); /* Safari and Chrome */
+	font-family: helvetica;
+	font-size: 14px;
+	color: white;
+	top: 555px;
+}
